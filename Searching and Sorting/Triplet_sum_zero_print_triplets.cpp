@@ -126,13 +126,12 @@ void findTriplets(int arr[], int n)
         // initialize left and right
         int l = i + 1;
         int r = n - 1;
-        int x = arr[i];
         while (l < r)
         {
-            if (x + arr[l] + arr[r] == 0)
+            if (arr[i] + arr[l] + arr[r] == 0)
             {
                 // print elements if it's sum is zero
-                printf("%d %d %d\n", x, arr[l], arr[r]);
+                printf("%d %d %d\n", arr[i], arr[l], arr[r]);
                 l++;
                 r--;
                 found = true;
@@ -141,7 +140,7 @@ void findTriplets(int arr[], int n)
 
             // If sum of three elements is less
             // than zero then increment in left
-            else if (x + arr[l] + arr[r] < 0)
+            else if (arr[i] + arr[l] + arr[r] < 0)
                 l++;
 
             // if sum is greater than zero than
