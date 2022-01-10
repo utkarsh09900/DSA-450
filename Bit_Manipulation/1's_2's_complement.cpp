@@ -27,6 +27,8 @@ to 0 and 0s to 1
   TC: O(N)
   SC: O(1)
 
+   code 1:
+
 class Solution{
 public:
     string onesComplement(string S,int N){
@@ -42,6 +44,17 @@ public:
                 ans = ans + '0';
         }
         return ans;
+    }
+};
+
+Alternative method:
+
+class Solution{ 
+public:
+   string onesComplement(string s,int n){
+        for(int i=0;i<n;i++)
+        s[i]^=1;
+        return s;
     }
 };
 
