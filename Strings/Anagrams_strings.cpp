@@ -83,8 +83,6 @@ Str2 =  ”NTEGERI”
 
 Frequency array of every element :
 
-
-
 We check for every element of Str2 and find that all elements are found, so return true.
 
 Code:
